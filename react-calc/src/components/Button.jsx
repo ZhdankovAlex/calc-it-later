@@ -3,6 +3,8 @@ import './Button.css';
 
 const isOperator = val => {
   //is a number (not[not_is_a_number]) or . or =
+  //doesn't work for . or =
+  //и не понимаю, почему так [ TO DO ]
   return !isNaN(val) || val === "." || val === "=";
 }
 
