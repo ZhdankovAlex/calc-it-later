@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Button } from './components/Button';
 import { Input } from './components/Input';
+import { ClearButton } from './components/ClearButton';
 
 class App extends Component {
   constructor(props) {
@@ -40,6 +41,12 @@ class App extends Component {
             <Button> 0 </Button>
             <Button> = </Button>
             <Button> / </Button>
+          </div>
+          <div className="row">
+            <ClearButton handleClear={() =>
+              this.setState({input: ""})}>
+              Clear
+            </ClearButton>
           </div>
         </div>
       </div>
