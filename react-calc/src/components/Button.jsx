@@ -9,7 +9,7 @@ const isOperator = val => {
 }
 
 //вернём jsx
-const Button = props =>
+export const Button = props =>
 //es-6 интерполяция строк ``
   <div className={`button-wrapper ${
       //текст на кнопке
@@ -18,5 +18,3 @@ const Button = props =>
     }`}>
     {props.children}
   </div>;
-
-export default Button;
