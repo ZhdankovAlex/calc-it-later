@@ -15,6 +15,7 @@ export const Button = props =>
       //текст на кнопке
       //if-else, но короче
       isOperator(props.children) ? null : "operator"
-    }`}>
+    }`}
+    onClick={() => props.handleClick(props.children)}>
     {props.children}
   </div>;
